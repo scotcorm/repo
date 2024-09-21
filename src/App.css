@@ -30,9 +30,10 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
   padding: 20px 0;
   margin-top: 2rem;
+  border-top: solid;
 }
 
 .navbar-brand {

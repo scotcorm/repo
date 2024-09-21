@@ -1,7 +1,7 @@
-import corm from '../assets/img/corm.png';
-import lsu from '../assets/img/lsu.png';
+// import corm from '../assets/img/corm.png';
+import lsu from '../assets/img/lsu.logo.svg.png';
 import nucamp from '../assets/img/nucamp-logo.png';
-import uw from '../assets/img/uw-logo.png';
+import uw from '../assets/img/uw-logo.svg.png';
 
 export const LIBRARIES = [
   {

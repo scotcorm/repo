@@ -1,15 +1,20 @@
-import { LIBRARIES } from '../../app/shared/LIBRARIES';
 import { Col, Row } from 'reactstrap';
 import LibraryCard from './LibraryCard';
+import { selectAllLibraries } from './librariesSlice';
 
-import React from 'react';
+const LibrariesList = ({ setLibraryId }) => {
+  const libraries = selectAllLibraries();
 
-const LibrariesList = () => {
   return (
     <Row className='ms-auto'>
-      {LIBRARIES.map((library) => {
+      {libraries.map((library) => {
         return (
-          <Col md='5' className='m-4' key={library.id}>
+          <Col
+            md='5'
+            className='m-4'
+            key={library.id}
+            onClick={() => setLibraryId(library.id)}
+          >
             <LibraryCard library={library} />
           </Col>
         );
